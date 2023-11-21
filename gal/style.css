@@ -1,0 +1,48 @@
+#container img{
+    position: relative;
+    min-width: 250px;
+    max-width: 250px;
+    min-height: 250px;
+    max-height: 250px;
+    left: 0px;
+    transition: 250ms;
+    z-index: 1;
+    border-radius: 8px;
+}
+#container{
+    position: relative;
+    height: 250px;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: nowrap;
+    gap:15px;
+    width: auto;
+    left: auto;
+}
+.buttonGaleria{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    font-size: 35px;
+    border: none;
+    background: rgba(255,255,255,0.5);
+    cursor: pointer;
+    border-radius: 50%;
+    opacity: 0;
+    transition: 0.5s;
+    z-index: 2;
+}
+#container:hover button{
+    opacity: 1;
+}
+button:disabled{
+    color: black;
+}
+#avancar{
+    top: calc(50% - 25px);
+    left: 10px;
+}
+#voltar{
+    top: calc(50% - 25px);
+    right: 10px;
+}
